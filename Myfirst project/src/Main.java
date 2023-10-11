@@ -32,23 +32,3 @@ public class Main {
 }
 
 
-
-/*
-
-public class Main {
-    public static void main(String[] args) {
-        Student cool = new Student ("q4");
-        cool.addCourse("silly course", 100);
-        cool.addCourse("sillier course", 1560);
-        cool.addCourse("silly c123ourse", 10230);
-        cool.addCourse("sillier cou123rse", 110);
-        System.out.println(cool.showCourse());
-        System.out.println("the average grade of this student is: " + cool.averageGrade());
-        System.out.println(cool);
-        System.out.println(cool.getCourses().get(0));
-        Student notcool = new Student("What's my id? is it 1 higher than wow?" );
-        System.out.println(notcool);
-    }
-}
-
- */
