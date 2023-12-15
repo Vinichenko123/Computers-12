@@ -11,9 +11,9 @@ public class Main {
          */
 
         ArrayList<CopyOfTwoDShape> shapes = new ArrayList<>();
-        shapes.add(new Circle(5));
+        shapes.add(new Circle(5, Colour.BLUE));
         shapes.add(new Triangle(1.0, 1.0, Math.sqrt(2)));
-        shapes.add(new Triangle(4.0, 9.0));
+        shapes.add(new Triangle(4.0, 9.0, Colour.RED));
 
         System.out.println(shapes);
 

@@ -11,9 +11,11 @@ public class Triangle extends CopyOfTwoDShape implements Rotate {
     double side3;
     double width;
     double height;
-    public Triangle(double width, double height){
+    Colour colour;
+    public Triangle(double width, double height, Colour colour){
         this.width = width;
         this.height = height;
+        this.colour = colour;
     }
     public Triangle(double side1, double side2, double side3){
         this.side1 = side1;
@@ -53,17 +55,6 @@ public class Triangle extends CopyOfTwoDShape implements Rotate {
 
 
     @Override
-    public String toString() {
-        return "Triangle{" +
-                "side1=" + side1 +
-                ", side2=" + side2 +
-                ", side3=" + side3 +
-                ", width=" + width +
-                ", height=" + height +
-                '}';
-    }
-
-    @Override
     public void setAngle(double angle) {
 
     }
@@ -76,6 +67,18 @@ public class Triangle extends CopyOfTwoDShape implements Rotate {
     @Override
     public double rotate180() {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "side1=" + side1 +
+                ", side2=" + side2 +
+                ", side3=" + side3 +
+                ", width=" + width +
+                ", height=" + height +
+                ", colour=" + colour +
+                '}';
     }
 
     @Override

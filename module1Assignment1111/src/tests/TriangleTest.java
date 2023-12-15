@@ -1,3 +1,4 @@
+import com.george.module1.four.Colour;
 import com.george.module1.four.Triangle;
 import org.junit.Test;
 
@@ -25,8 +26,8 @@ public class TriangleTest {
         //7 width, 6 height
         //9width 0.1 height
 
-        assertEquals(7*6*0.5,new Triangle(7,6).getArea() ,0.1);
-        assertEquals(9*0.1*0.5, new Triangle(9,0.1).getArea() ,0.1 );
+        assertEquals(7*6*0.5,new Triangle(7,6, Colour.RED).getArea() ,0.1);
+        assertEquals(9*0.1*0.5, new Triangle(9,0.1, Colour.RED).getArea() ,0.1 );
 
 
 

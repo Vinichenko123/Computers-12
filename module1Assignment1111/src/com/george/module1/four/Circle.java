@@ -5,9 +5,11 @@ package com.george.module1.four;
 class Circle extends CopyOfTwoDShape {
     public final double PI = Math.PI;
     private double radius;
+    Colour colour;
 
-    Circle(double radius){
+    Circle(double radius, Colour colour){
         this.radius = radius;
+        this.colour = colour;
     }
 
     @Override
@@ -16,15 +18,13 @@ class Circle extends CopyOfTwoDShape {
         return circleArea;
     }
 
+
     @Override
     public String toString() {
         return "Circle{" +
                 "PI=" + PI +
                 ", radius=" + radius +
+                ", colour=" + colour +
                 '}';
     }
-
-
-
-
 }
