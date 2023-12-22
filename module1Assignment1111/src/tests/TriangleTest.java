@@ -17,7 +17,7 @@ public class TriangleTest {
     */
 
 
-    @Test public void testIrrational(){
+    @Test public void testArea(){
         // sides = a+b > c and  a+c > b and c+b > a
         // sides !=  a+b > c and  a+c > b and  c+b > a -> irrational triangle, must return NaN
         assertEquals( Math.sqrt((2 + 4 + 3) * 0.5 * ((2 + 4 + 3) * 0.5-2) * ((2 + 4 + 3) * 0.5-4) * ((2 + 4 + 3) * 0.5 - 3))  ,new Triangle(2,4, 3).getArea() ,0.1);

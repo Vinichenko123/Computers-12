@@ -12,7 +12,7 @@ public class Circle extends CopyOfTwoDShape {
     }
 
     public double getArea(){
-        double circleArea = 2*PI*radius;
+        double circleArea =  PI*radius*radius;
         return circleArea;
     }
 
