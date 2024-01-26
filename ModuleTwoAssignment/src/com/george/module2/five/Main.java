@@ -1,22 +1,22 @@
 package com.george.module2.five;
 
 
-import java.io.File;
-
 public class Main {
 
     public static void main(String[] args) {
-        CaesarCipher shift1 = new CaesarCipher(1);
-        String encryptedMessageShift1 = shift1.encrypt("defend the east wall of the castle");
-        System.out.println(encryptedMessageShift1);
-        String decryptedMessageShift1 = shift1.decrypt(encryptedMessageShift1);
+        Cipher shift1 = new Cipher(1);
+        String encryptedMessageShiftOne = shift1.encrypt("move this message by 1");
+
+        System.out.println(encryptedMessageShiftOne);
+        String decryptedMessageShift1 = shift1.decrypt(encryptedMessageShiftOne);
         System.out.println(decryptedMessageShift1);
 
-        CaesarCipher shift3 = new CaesarCipher(3);
-        String encryptedMessageShift3 = shift3.encrypt("hello world");
-        System.out.println(encryptedMessageShift3);
-        String decryptedMessageShift3 = shift3.decrypt(encryptedMessageShift3);
-        System.out.println(decryptedMessageShift3);
+        Cipher shift3 = new Cipher(3);
+        String encryptedMessageShiftThree = shift3.encrypt("move each letter by 3");
+
+        System.out.println(encryptedMessageShiftThree);
+        String decryptedMessageShiftThree = shift3.decrypt(encryptedMessageShiftThree);
+        System.out.println(decryptedMessageShiftThree);
 
     }
 }
