@@ -22,7 +22,7 @@ public class Main {
             // If It's empty, it means that we have either finished traversing, or that we haven't started traversing
             Node root = graph.getFirst();
             if (root.isVisited()) {
-                System.out.println("Finished traversing");
+                System.out.println("Finished");
                 return;
             } else {
                 visitingQueue.add(root.getKey());
@@ -31,7 +31,6 @@ public class Main {
 
         Integer currentKey = visitingQueue.poll();
         if (currentKey == null) {
-            System.out.println("Current node is null, should never happen");
             return;
         }
         // currentKey - 1 because the graph arraylist has id 1 as entry 0, id 2 as entry 1, etc.
@@ -42,7 +41,7 @@ public class Main {
             if (graph.get(nodeId - 1).isVisited()) continue;
             visitingQueue.add(nodeId);
         }
-        System.out.println("Queue contents: " + visitingQueue);
+        System.out.println("Queue: " + visitingQueue);
         BFS();
     }
 

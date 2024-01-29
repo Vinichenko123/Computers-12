@@ -11,10 +11,9 @@ public class Fibonacci {
     }
 
      public static void main(String[] args) {
-        System.out.println("ken");
+        System.out.println(generateSum(1));
         System.out.println(generateSum(5));
-        System.out.println(generateSum(10));
-        System.out.println(generateSum(-1));
+        System.out.println(generateSum(-5));
     }
 
 }
